@@ -1,0 +1,71 @@
+#grade{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav section"
+    "nav section"
+    "footer footer";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 50px 1fr 100px 50px;
+}
+#border{
+    border: 1px solid black;
+}
+section{
+    grid-area: section;
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+nav{
+    grid-area: nav;
+}
+.header2{
+    grid-area: header2;
+    background-color: chartreuse;
+    border: 3px solid black;
+    margin-left: 5px;
+}
+.nav2{
+    grid-area: nav2;
+    background-color: brown;
+    border: 3px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.section2{
+    grid-area: section2;
+    background-color: purple;
+    border: 3px solid black;
+    margin: 5px;
+}
+.footer2{
+    grid-area: footer2;
+    background-color: aquamarine;
+    border: 3px solid black;
+    margin: 5px;
+}
+.aside{
+    grid-area: aside;
+    background-color: aqua;
+    border: 3px solid black;
+    margin: 5px;
+}
+.aside2{
+    grid-area: aside2;
+    background-color: blueviolet;
+    border: 3px solid black;
+    margin: 5px;
+}
+#grade2{
+    display: grid;
+    grid-template-areas: 
+    "nav2 nav2 header2 header2 header2"
+    "nav2 nav2 section2 section2 aside"
+    "footer2 footer2 section2 section2 aside2";
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: auto auto auto 20% 20%;
+}
